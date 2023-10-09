@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>TV Maze</title>
+    <link rel="stylesheet" href="./ispit.css">
 </head>
 <body>
-    <button onclick="myFunction()">Try it</button>
-    <script>
-        function myFunction() {
-          var x = document.createElement("INPUT");
-          x.setAttribute("type", "text");
-          x.setAttribute("value", "Find music!");
-          document.body.appendChild(x);
-        }
-        </script>
+    <h2>TV Maze</h2>
+    <input class="search" type="text" placeholder="Pretrazi serije">
+    <br><br>
+    <table id="results">
+        <thead>
+            <tr>
+                <th>Series</th>
+                <th>Rating</th>
+                <th>Genres</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <p id="message"></p>
+    <span id="loader"></span>
+    <script src="ispit.min.js"></script>
 </body>
 </html>
